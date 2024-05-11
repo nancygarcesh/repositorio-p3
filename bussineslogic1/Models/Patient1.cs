@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace bussineslogic1.Models
 {
-    public class Patient
+    public class Patient1
     {
-        public int Id { get; set; }
         public string Name { get; set; }
-        public string Code { get; set; }
+        public string LastName { get; set; }
+        public string CI { get; set; }
     }
 }

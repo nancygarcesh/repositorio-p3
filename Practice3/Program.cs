@@ -22,13 +22,15 @@ class Program
 
         var app = builder.Build();
 
-        if (app.Environment.IsDevelopment() || app.Environment.EnvironmentName == "QA")
+        if (app.Environment.IsDevelopment())
         {
             app.UseSwagger();
+            
             app.UseSwaggerUI(c =>
             {
                 c.SwaggerEndpoint("/swagger/v1/swagger.json", "My API for Practice 3 V1");
             });
+            
         }
         app.UseErrorLogging();
         app.UseHttpsRedirection();
