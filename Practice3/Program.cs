@@ -7,7 +7,7 @@ using Practice3.Middlewares;
 
 class Program
 {
-    static void Main(string[] args)
+    static void Main(string[] args) //todo
     {
         var builder = WebApplication.CreateBuilder(args);
         builder.Services.AddAuthorization();
